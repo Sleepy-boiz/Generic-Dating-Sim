@@ -34,28 +34,52 @@ if player_name == "":
     
 # Now the other characters in the game can greet the player.
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
+# Show a background. This uses a placeholder by default, but you can
+# add a file (named either "bg room.png" or "bg room.jpg") to the
+# images directory to show it.
 
 scene bg room
 show yn at center
 
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
+# This shows a character sprite. A placeholder is used, but you can
+# replace it by adding a file named "eileen happy.png" to the images
+# directory.
 
 show sally at left
 
-    # These display lines of dialogue.
+# These display lines of dialogue.
 
 s "hey %(player_name)s wasup!"# %(player_name) is the name of Y/N
 show monika at right 
 m "hey bro wanna hangout?"
 hide sally
 show eillen at left
-e "want to play fortnite with me?"
+e "No hang out with me!"
+hide eillen
+show sally at left
+s "you gotta pick one of us to not go since theirs only room for three of us"
+menu:
+    "uhh i choose Eillen":
+        e "damn see you late %(player_name)"
+        jump No_Eillen
+    "oh i guess sally is out":
+        s "godamn it!"
+        jump No_Sally
+    "sorry monika your out":
+        m "if only this was a game i would just make those two dissapear"
+        s "hey!"
+        e "yea cmon monkia"
+        jump No_Monika
+label No_Monika:
 
-    # Return ends the game.
+label No_Eillen:
+
+label No_Sally:
+
+
+label Eillen_ending:
+label Sally_Ending:
+label Monika_Ending:
+# Return ends the game.
 
 return

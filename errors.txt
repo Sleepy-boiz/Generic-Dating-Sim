@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 16: expected '=' not found.
-    image Y/N="images/main.png"
-           ^
+File "game/script.rpy", line 32: if statement expects a non-empty block.
+    if player_name == "":
+                         ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Tue May 14 14:39:53 2024
+Tue May 14 16:27:36 2024
