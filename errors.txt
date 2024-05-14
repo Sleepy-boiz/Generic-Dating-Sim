@@ -2,17 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 7: Line is indented, but the preceding define statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    ("Eileen", color="#2b5309")
-    ^
-
-File "game/script.rpy", line 9: Line is indented, but the preceding define statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    ("Sally", color="#25088d")
-    ^
-
-File "game/script.rpy", line 11: Line is indented, but the preceding define statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    ("Monika", color="#ff4dfa")
-    ^
+File "game/script.rpy", line 16: expected '=' not found.
+    image Y/N="images/main.png"
+           ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Tue May 14 11:46:55 2024
+Tue May 14 14:39:53 2024

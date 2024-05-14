@@ -5,10 +5,15 @@
 
 define e = Character("Eileen", color="#2b5309")
 define s = Character("Sally", color="#25088d")
-define m = Character("Monika", color="#ff4dfa")
+define m = Character("Monika", color="#705200")
+define y = Character("%(player_name)", color="#ff49c2ff")
 
 
 # The game starts here.
+image sally="images/sally.png"
+image eillen="images/eillien.png"
+image monika="images/monika.png"
+image yn="images/main.png"
 
 label start:
    "I've been thinking about changing my name."
@@ -34,17 +39,22 @@ if player_name == "":
     # images directory to show it.
 
 scene bg room
+show yn at center
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-image sally blank="images/sally_blank.png"
-show sally blank at left
+show sally at left
 
     # These display lines of dialogue.
 
 s "hey %(player_name)s wasup!"# %(player_name) is the name of Y/N
+show monika at right 
+m "hey bro wanna hangout?"
+hide sally
+show eillen at left
+e "want to play fortnite with me?"
 
     # Return ends the game.
 
