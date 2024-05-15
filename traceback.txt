@@ -1,24 +1,24 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 54, in script
-    m "hey %(player_name) wanna hangout?"
-ValueError: unsupported format character 'w' (0x77) at index 19
+  File "game/script.rpy", line 73, in script
+    e "damn see you late %(player_name)"
+ValueError: incomplete format
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 54, in script
-    m "hey %(player_name) wanna hangout?"
-  File "C:\Users\15122\Downloads\renpy-8.2.1-sdk\renpy-8.2.1-sdk\renpy\ast.py", line 2557, in execute
+  File "game/script.rpy", line 73, in script
+    e "damn see you late %(player_name)"
+  File "D:\program\renpy-8.2.1-sdk.7z\renpy-8.2.1-sdk\renpy\ast.py", line 2557, in execute
     Say.execute(self)
-  File "C:\Users\15122\Downloads\renpy-8.2.1-sdk\renpy-8.2.1-sdk\renpy\ast.py", line 615, in execute
+  File "D:\program\renpy-8.2.1-sdk.7z\renpy-8.2.1-sdk\renpy\ast.py", line 615, in execute
     renpy.exports.say(who, what, *args, **kwargs)
-  File "C:\Users\15122\Downloads\renpy-8.2.1-sdk\renpy-8.2.1-sdk\renpy\exports.py", line 1482, in say
+  File "D:\program\renpy-8.2.1-sdk.7z\renpy-8.2.1-sdk\renpy\exports.py", line 1482, in say
     what = what % tag_quoting_dict
-ValueError: unsupported format character 'w' (0x77) at index 19
+ValueError: incomplete format
 
-Windows-10-10.0.19045 AMD64
+Windows-10-10.0.22631 AMD64
 Ren'Py 8.2.1.24030407
 Classic Dating Sim 1.0
-Tue May 14 14:41:38 2024
+Tue May 14 19:16:27 2024

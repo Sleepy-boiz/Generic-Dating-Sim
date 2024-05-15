@@ -60,22 +60,19 @@ show sally at left
 s "you gotta pick one of us to not go since theirs only room for three of us"
 menu:
     "uhh i choose Eillen":
-        e "damn see you late %(player_name)"
         jump No_Eillen
     "oh i guess sally is out":
-        s "godamn it!"
         jump No_Sally
     "sorry monika your out":
-        m "if only this was a game i would just make those two dissapear"
-        s "hey!"
-        e "yea cmon monkia"
         jump No_Monika
 label No_Monika:
-
+    m "if only this was a game i would just make those two dissapear"
+    s "hey!"
+    e "yea cmon monkia"
 label No_Eillen:
-
+    e "damn see you later %(player_name)"
 label No_Sally:
-
+    s "godamn it!"
 
 label Eillen_ending:
 label Sally_Ending:

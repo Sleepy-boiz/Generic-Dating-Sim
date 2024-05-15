@@ -1,114 +1,37 @@
-2024-05-14 21:26:30 UTC
+2024-05-15 00:16:10 UTC
 Windows-10-10.0.22631
 Ren'Py 8.2.1.24030407
 
-Early init took 0.37s
-Loading error handling took 0.18s
-Loading script took 2.17s
-Loading save slot metadata took 0.14s
+Early init took 0.26s
+Loading error handling took 0.15s
+Loading script took 1.83s
+Loading save slot metadata took 0.19s
 Loading persistent took 0.00s
-
-File "game/script.rpy", line 32: if statement expects a non-empty block.
-    if player_name == "":
-                         ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start took 0.60s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1650 SUPER/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.34'
-Display Info: None
-Screen sizes: virtual=(1280, 720) physical=(1920, 1009) drawable=(1920, 1009)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1280, 720) physical=(1920, 1009) drawable=(1920, 1009)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 48.90s
-Loading error handling took 0.16s
-Loading script took 1.93s
-Loading save slot metadata took 0.12s
-Loading persistent took 0.00s
-
-File "game/script.rpy", line 32: reached end of line when expecting ':'.
-    if player_name == ""
-                        ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start took 0.55s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1650 SUPER/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.34'
-Display Info: None
-Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 65.12s
-Loading error handling took 0.05s
-Loading script took 0.96s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-
-File "game/script.rpy", line 32: if statement expects a non-empty block.
-    if player_name == "":
-                         ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start took 0.44s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1650 SUPER/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.34'
-Display Info: None
-Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 102.94s
-Loading error handling took 0.06s
-Loading script took 1.07s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.42s
-Loading analysis data took 0.04s
+Running init code took 0.39s
+Loading analysis data took 0.03s
 Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
+Reloading save slot metadata took 0.04s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\mason\\AppData\\Roaming/RenPy/backups\\Classic Dating Sim':
-Dump and make backups took 0.09s
+Dump and make backups took 0.10s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.07s
+Initial gc took 0.05s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Creating interface object took 0.30s
+Creating interface object took 0.33s
 Cleaning stores took 0.00s
 Init translation took 0.05s
-Build styles took 0.00s
+Build styles took 0.01s
 Load screen analysis took 0.01s
-Analyze screens took 0.01s
-Save screen analysis took 0.03s
-Prepare screens took 0.07s
+Analyze screens took 0.02s
+Save screen analysis took 0.04s
+Prepare screens took 0.09s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
+Save bytecode. took 0.05s
 Running _start took 0.00s
-Interface start took 0.17s
+Interface start took 0.11s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
@@ -118,28 +41,23 @@ Vendor: "b'NVIDIA Corporation'"
 Renderer: b'NVIDIA GeForce GTX 1650 SUPER/PCIe/SSE2'
 Version: b'4.6.0 NVIDIA 551.34'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1009) drawable=(1920, 1009)
 Maximum texture size: 4096x4096
 Screen sizes: virtual=(1920, 1080) physical=(1920, 1009) drawable=(1920, 1009)
 Maximum texture size: 4096x4096
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.04s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.04s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.04s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
+
+Full traceback:
+  File "game/script.rpy", line 73, in script
+    e "damn see you late %(player_name)"
+  File "D:\program\renpy-8.2.1-sdk.7z\renpy-8.2.1-sdk\renpy\ast.py", line 2557, in execute
+    Say.execute(self)
+  File "D:\program\renpy-8.2.1-sdk.7z\renpy-8.2.1-sdk\renpy\ast.py", line 615, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "D:\program\renpy-8.2.1-sdk.7z\renpy-8.2.1-sdk\renpy\exports.py", line 1482, in say
+    what = what % tag_quoting_dict
+ValueError: incomplete format
+
+While running game code:
+  File "game/script.rpy", line 73, in script
+    e "damn see you late %(player_name)"
+ValueError: incomplete format
