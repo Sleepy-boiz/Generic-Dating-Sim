@@ -4,13 +4,13 @@
 # name of the character.
 
 define e = Character("Eileen", color="#2b5309")
-define s = Character("Sally", color="#25088d")
+define s = Character("Sara", color="#25088d")
 define m = Character("Monika", color="#705200")
 define y = Character("%(player_name)", color="#ff49c2ff")
 
 
 # The game starts here.
-image sally="images/sally.png"
+image sara="images/sara.png"
 image eillen="images/eillien.png"
 image monika="images/monika.png"
 image yn="images/main.png"
@@ -45,25 +45,25 @@ show yn at center
 # replace it by adding a file named "eileen happy.png" to the images
 # directory.
 
-show sally at left
+show sara at left
 
 # These display lines of dialogue.
 
 s "hey %(player_name)s wasup!"# %(player_name) is the name of Y/N
 show monika at right 
-m "hey bro wanna hangout?"
-hide sally
+m "Hey! I wanted to hang you with %(player_name)s."
+hide sara
 show eillen at left
-e "No hang out with me!"
+e "No! I wanted to hang out with them!"
 hide eillen
-show sally at left
-s "you gotta pick one of us to not go since theirs only room for three of us"
+show sara at left
+s "This isn't going anywhere, %(player_name)s? you should choose who you wanna leave behind with since there's only room for 3."
 menu:
-    "uhh i choose Eillen":
+    "Uhh... Eillen? can you stay behind?":
         jump No_Eillen
-    "oh i guess sally is out":
-        jump No_Sally
-    "sorry monika your out":
+   "Oh... well i guess Sara can stay behind.":
+        jump No_Sara
+   "Uhm... Monika should stay behind.":
         jump No_Monika
 label No_Monika:
     m "if only this was a game i would just make those two dissapear"
@@ -71,8 +71,8 @@ label No_Monika:
     e "yea cmon monkia"
 label No_Eillen:
     e "damn see you later %(player_name)"
-label No_Sally:
-    s "godamn it!"
+label No_Sara:
+    s "godamn it! well i can see you again some other time"
 
 label Eillen_ending:
 label Sally_Ending:
