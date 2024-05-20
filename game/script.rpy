@@ -66,6 +66,9 @@ menu:
         "Uhm... Monika should stay behind.":
             jump No_Monika
 label No_Monika:
+    show eillen at left
+    show sara at right
+    hide monika
     m "if only this was a game i would just make those two dissapear"
     s "hey!"
     e "yea cmon monkia"
@@ -75,15 +78,21 @@ label No_Monika:
             jump Eillen_Ending
         "Chose Sara to date":
             jump Sara_Ending
-    label No_Eillen:
+label No_Eillen:
+    show monika at right
+    show sara at left
+    hide eillen
     e "damn see you later %(player_name)"
 #add rest of script for CHARATER DEVELOPMENT
-    menu:
+menu:
         "Chose Eillen to date":
             jump Sara_Ending
         "Chose monika to date":
             jump Monika_Ending
 label No_Sara:
+    show monika at right
+    show eillen at left
+    hide sara
     s "godamn it! well i can see you again some other time"
 #add rest of script for CHARATER DEVELOPMENT
 menu:
@@ -93,8 +102,39 @@ menu:
             jump Monika_Ending
 
 label Eillen_Ending:
+    hide monika
+    hide sara
+    e "Nice i like hanging with you"
+menu:
+    "i love you":
+        jump End
+    "i really like you and haning out with you":
+        jump End
 label Sara_Ending:
+    hide eillen
+    hide monika
+    s "Nice i like hanging with you"
+menu:
+    "i love you":
+        jump End
+    "i really like you and haning out with you":
+        jump End
 label Monika_Ending:
+    hide sara
+    hide eillen
+    m "Nice i like hanging with you"
+menu:
+    "i love you":
+        jump End
+    "i really like you and haning out with you":
+        jump End
 # Return ends the game.
-
+label End:
+hide eileen
+hide sara
+hide monika
+"hey thanks for playing im busy with school and bad at scripting"
+"this is my first time making a game if you think you could make the script better or add parts please go to the github and suggest it i will be watching and enjoy and critizim this is also technically in development"
+"thank you for even giving this game a chance if you comment on the project i will try to add your name to the credits i love you"
+"thanks for playing"
 return
