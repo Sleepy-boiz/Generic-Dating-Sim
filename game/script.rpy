@@ -37,8 +37,8 @@ if player_name == "":
 # Show a background. This uses a placeholder by default, but you can
 # add a file (named either "bg room.png" or "bg room.jpg") to the
 # images directory to show it.
-
-scene bg room
+image backround="gui/menu.png"
+scene backround
 show yn at center
 
 # This shows a character sprite. A placeholder is used, but you can
@@ -59,23 +59,41 @@ hide eillen
 show sara at left
 s "This isn't going anywhere, %(player_name)s? you should choose who you wanna leave behind with since there's only room for 3."
 menu:
-    "Uhh... Eillen? can you stay behind?":
-        jump No_Eillen
-   "Oh... well i guess Sara can stay behind.":
-        jump No_Sara
-   "Uhm... Monika should stay behind.":
-        jump No_Monika
+        "Uhh... Eillen? can you stay behind?":
+            jump No_Eillen
+        "Oh... well i guess Sara can stay behind.":
+            jump No_Sara
+        "Uhm... Monika should stay behind.":
+            jump No_Monika
 label No_Monika:
     m "if only this was a game i would just make those two dissapear"
     s "hey!"
     e "yea cmon monkia"
-label No_Eillen:
+ #add rest of script for CHARATER DEVELOPMENT
+    menu:
+        "Chose Eillen to date":
+            jump Eillen_Ending
+        "Chose Sara to date":
+            jump Sara_Ending
+    label No_Eillen:
     e "damn see you later %(player_name)"
+#add rest of script for CHARATER DEVELOPMENT
+    menu:
+        "Chose Eillen to date":
+            jump Sara_Ending
+        "Chose monika to date":
+            jump Monika_Ending
 label No_Sara:
     s "godamn it! well i can see you again some other time"
+#add rest of script for CHARATER DEVELOPMENT
+menu:
+        "Chose Eillen to date":
+            jump Eillen_Ending
+        "Chose monika to date":
+            jump Monika_Ending
 
-label Eillen_ending:
-label Sally_Ending:
+label Eillen_Ending:
+label Sara_Ending:
 label Monika_Ending:
 # Return ends the game.
 
